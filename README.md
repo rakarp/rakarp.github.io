@@ -1,4 +1,4 @@
-## Bemutatás
+## Bemutatkozás
 
 - Alapítványunk a befogott kutyák életének megmentésére hozta létre a Szekszárdi Kutyamenhelyt.
 
