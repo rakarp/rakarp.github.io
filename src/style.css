@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+}
+
+body {
+  background-color: #faf5ed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1030px) {
+  body {
+    font-size: 17px;
+  }
+}
+
+.root {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 799px) {
+  .root {
+    width: 98%;
+  }
+}
+
+@media screen and (min-width: 1380px) {
+  .root {
+    width: 62%;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.header h1 {
+  margin: 0 auto;
+  min-width: 330px;
+  width: 79%;
+  padding: .2em;
+  background-color: #7a3636c0;
+  border-radius: 0 0 3rem 3rem;
+}
+
+.header h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.content {
+  background: url("../img/sad-puppy.png") no-repeat center 0/auto 70% #968571;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 330px;
+  min-height: 38.88rem;
+  margin: 3.333em auto .6em;
+  border-radius: 3rem 3rem 0 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    background: url("../img/sad-puppy.png") no-repeat center 0/auto 50% #968571;
+  }
+}
+
+.content h2 {
+  text-align: center;
+  color: #7a3636;
+  margin: 0;
+  padding: .4em 0;
+}
+
+.content h2#subh {
+  padding: .4em 1em;
+  background-color: #ffffffb3;
+}
+
+.content .imgdiv {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2 8rem;
+          flex: 1 2 8rem;
+  min-height: 20rem;
+}
+
+.content .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 8rem;
+          flex: 1 1 8rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-left: .5rem;
+}
+
+@media screen and (max-width: 700px) {
+  .content .flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.textdiv {
+  margin: 0 .5rem .5rem 0;
+  background-color: #ffffff99;
+  padding: 1em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 14em;
+          flex: 1 1 14em;
+  min-width: 10em;
+  max-width: 26em;
+  -webkit-box-shadow: 0.5px 0.5px 4px grey;
+          box-shadow: 0.5px 0.5px 4px grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+}
+
+.textdiv:hover {
+  background-color: white;
+  -webkit-box-shadow: 0.5px 0.5px 10px #575757;
+          box-shadow: 0.5px 0.5px 10px #575757;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.linkbutton {
+  background-color: #7a3636;
+  min-width: 13em;
+  padding: 1em 0;
+  border-radius: 2em;
+  -webkit-box-shadow: 0.5px 0.5px 4px grey;
+          box-shadow: 0.5px 0.5px 4px grey;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
+
+@media screen and (max-width: 799px) {
+  .linkbutton {
+    min-width: 11em;
+  }
+}
+
+.linkbutton:hover {
+  cursor: pointer;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  background-color: #d66767;
+  -webkit-box-shadow: 0.5px 0.5px 10px #575757;
+          box-shadow: 0.5px 0.5px 10px #575757;
+}
+
+.buttontext {
+  color: white;
+  font-size: 1.07em;
+  text-shadow: 0.5px 0.5px 3px black;
+  text-decoration: none;
+}
+
+.avail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: .4em 0;
+}
+
+.avail .textdiv img {
+  height: 1.78rem;
+}
+
+.avail div:last-child {
+  margin: 0 0 .5em .5em;
+  width: 66%;
+  border: 2px solid #968571;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  text-shadow: 1px 2px 4px grey;
+}
+
+footer p {
+  background-color: #968571;
+  padding: 1em;
+  border-radius: 3em 3em 0 0;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
