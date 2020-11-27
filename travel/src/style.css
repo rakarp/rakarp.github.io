@@ -110,13 +110,13 @@ body {
 
 .side-track {
   display: flex;
-  flex: 0 2 22%;
+  flex: 0 2 17%;
   flex-direction: column;
   justify-content: space-between;
   padding: 0 0.75rem;
 }
 .side-track .side-pic#sunset {
-  margin-top: -3.66rem;
+  margin-top: -2.5rem;
   max-width: 70%;
   align-self: flex-end;
 }
@@ -164,7 +164,7 @@ h1 {
 .text-box {
   margin: 0 auto;
   line-height: 2;
-  flex: 1 1 54%;
+  flex: 1 1 66%;
 }
 .text-box h2 {
   color: #ff5100;
